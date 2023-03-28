@@ -1,0 +1,35 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<br />
+<div>
+    <form method="post" enctype="multipart/form-data">
+        <div>
+            <p>Upload a file image using this form to predict its label:</p>
+        </div>
+        <div>
+            <input type="file" name="imageFile">
+        </div>
+        <div>
+            <br />
+            <input type="submit" value="Upload File" name="submit">
+        </div>
+
+    </form>
+</div>
+<br />
+<br />
+
+<div id="divPrediction" class="col-md-10 text-danger" style="font-size: 20pt"></div>
+
+<script src="~/js/upload.js"></script>
+
+<br />
+<br />
+<br />
+
+
+

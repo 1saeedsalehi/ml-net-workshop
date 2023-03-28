@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>7.2</LangVersion>
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="assets\inputs\images\flower_photos_small_set\**" />
+    <EmbeddedResource Remove="assets\inputs\images\flower_photos_small_set\**" />
+    <None Remove="assets\inputs\images\flower_photos_small_set\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="assets\inputs\images\" />
+    <Folder Include="assets\inputs\test-images\" />
+    <Folder Include="assets\outputs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Microsoft.ML" Version="1.4.0" />
+	  <PackageReference Include="Microsoft.ML.ImageAnalytics" Version="1.4.0" />
+	  <PackageReference Include="Microsoft.ML.Vision" Version="1.4.0" />
+	  <PackageReference Include="SciSharp.TensorFlow.Redist" Version="1.14.0" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <ProjectReference Include="..\ImageClassification.Shared\ImageClassification.Shared.csproj" />
+  </ItemGroup>
+
+  
+
+</Project>
