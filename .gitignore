@@ -348,3 +348,6 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/Samples/Image Classification/ImageClassification.Train/assets/inputs/images/flower_photos_small_set
+/Samples/Image Classification/ImageClassification.Predict/assets/inputs/MLNETModel/imageClassifier.zip
+/Samples/Image Classification/ImageClassification.Train/assets/outputs/imageClassifier.zip
